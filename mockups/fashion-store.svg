@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 640">
+  <defs>
+    <linearGradient id="a" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f9f5ee"/>
+      <stop offset="1" stop-color="#e7f1fb"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="640" rx="34" fill="url(#a)"/>
+  <rect x="34" y="34" width="412" height="48" rx="24" fill="#ffffff"/>
+  <circle cx="70" cy="58" r="8" fill="#101a2f"/>
+  <rect x="96" y="52" width="98" height="12" rx="6" fill="#101a2f" opacity=".28"/>
+  <rect x="322" y="48" width="84" height="20" rx="10" fill="#101a2f"/>
+  <rect x="34" y="112" width="412" height="180" rx="30" fill="#17233b"/>
+  <text x="68" y="170" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="900" fill="#ffffff">Fashion</text>
+  <text x="68" y="214" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="900" fill="#9fe8c7">Store</text>
+  <rect x="306" y="142" width="94" height="120" rx="44" fill="#f0c4a4"/>
+  <path d="M307 206c29 22 61 22 94 0v56h-94z" fill="#d7ccff"/>
+  <rect x="34" y="320" width="120" height="178" rx="24" fill="#ffffff"/>
+  <rect x="180" y="320" width="120" height="178" rx="24" fill="#ffffff"/>
+  <rect x="326" y="320" width="120" height="178" rx="24" fill="#ffffff"/>
+  <rect x="58" y="350" width="72" height="80" rx="22" fill="#efe3cf"/>
+  <rect x="204" y="350" width="72" height="80" rx="22" fill="#9fe8c7"/>
+  <rect x="350" y="350" width="72" height="80" rx="22" fill="#d7ccff"/>
+  <rect x="58" y="452" width="72" height="10" rx="5" fill="#101a2f" opacity=".22"/>
+  <rect x="204" y="452" width="72" height="10" rx="5" fill="#101a2f" opacity=".22"/>
+  <rect x="350" y="452" width="72" height="10" rx="5" fill="#101a2f" opacity=".22"/>
+  <rect x="34" y="526" width="412" height="72" rx="26" fill="#ffffff" opacity=".82"/>
+  <text x="58" y="571" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900" fill="#101a2f">Premium collection launch</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 640">
+  <defs>
+    <linearGradient id="a" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f2f7fb"/>
+      <stop offset="1" stop-color="#efe3cf"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="640" rx="34" fill="url(#a)"/>
+  <rect x="34" y="34" width="412" height="78" rx="30" fill="#ffffff"/>
+  <rect x="64" y="62" width="120" height="18" rx="9" fill="#101a2f"/>
+  <rect x="310" y="58" width="86" height="28" rx="14" fill="#9fe8c7"/>
+  <rect x="34" y="148" width="412" height="178" rx="34" fill="#ffffff"/>
+  <text x="66" y="214" font-family="Inter, Arial, sans-serif" font-size="35" font-weight="900" fill="#101a2f">Service</text>
+  <text x="66" y="255" font-family="Inter, Arial, sans-serif" font-size="35" font-weight="900" fill="#101a2f">Business</text>
+  <rect x="298" y="186" width="88" height="88" rx="28" fill="#d7ccff"/>
+  <rect x="34" y="360" width="124" height="130" rx="28" fill="#ffffff"/>
+  <rect x="178" y="360" width="124" height="130" rx="28" fill="#ffffff"/>
+  <rect x="322" y="360" width="124" height="130" rx="28" fill="#ffffff"/>
+  <circle cx="96" cy="412" r="24" fill="#9fe8c7"/>
+  <circle cx="240" cy="412" r="24" fill="#d7ccff"/>
+  <circle cx="384" cy="412" r="24" fill="#efe3cf"/>
+  <rect x="60" y="454" width="72" height="10" rx="5" fill="#101a2f" opacity=".18"/>
+  <rect x="204" y="454" width="72" height="10" rx="5" fill="#101a2f" opacity=".18"/>
+  <rect x="348" y="454" width="72" height="10" rx="5" fill="#101a2f" opacity=".18"/>
+  <text x="58" y="568" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900" fill="#101a2f">Lead generation website</text>
+</svg>

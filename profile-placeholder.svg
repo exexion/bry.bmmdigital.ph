@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-labelledby="title desc">
+  <title id="title">Temporary profile placeholder</title>
+  <desc id="desc">A polished avatar placeholder for the portfolio hero photo.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#eef4f7"/>
+      <stop offset="0.55" stop-color="#f7f6f1"/>
+      <stop offset="1" stop-color="#e9f7f0"/>
+    </linearGradient>
+    <linearGradient id="suit" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#101a2f"/>
+      <stop offset="1" stop-color="#1d2d4a"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="900" fill="url(#bg)"/>
+  <circle cx="560" cy="140" r="130" fill="#d7ccff" opacity="0.55"/>
+  <circle cx="155" cy="690" r="180" fill="#9fe8c7" opacity="0.42"/>
+  <rect x="128" y="120" width="464" height="640" rx="232" fill="#ffffff" opacity="0.72"/>
+  <circle cx="360" cy="314" r="118" fill="#d7b18f"/>
+  <path d="M224 798c19-184 79-276 136-276s117 92 136 276H224z" fill="url(#suit)"/>
+  <path d="M286 546h148l-74 96-74-96z" fill="#ffffff"/>
+  <path d="M258 366c12 72 54 118 102 118s90-46 102-118c-34 24-73 36-116 36-35 0-64-12-88-36z" fill="#c89570" opacity="0.75"/>
+  <path d="M240 298c5-104 55-162 134-162 72 0 119 48 128 138-52-18-101-49-146-91-31 49-70 87-116 115z" fill="#17233b"/>
+  <circle cx="360" cy="666" r="22" fill="#9fe8c7" opacity="0.9"/>
+  <circle cx="404" cy="666" r="22" fill="#d7ccff" opacity="0.9"/>
+  <circle cx="316" cy="666" r="22" fill="#efe3cf" opacity="0.9"/>
+</svg>
