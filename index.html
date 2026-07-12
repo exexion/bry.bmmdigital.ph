@@ -8,9 +8,6 @@
 <meta name="description" content="Bryan Jay Maningas helps growth-focused businesses turn ad spend into predictable revenue with Meta Ads, conversion-focused websites, automation, and AI chatbot systems.">
 <link rel="icon" href="/favicon.png?v=20260708-profile" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20260708-profile">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
     --base:#F7F8FA;
@@ -21,6 +18,7 @@
     --accent:#087A3A;
     --accent-dim:#E8F7EE;
     --signal:#4ADE80;
+    --muted-strong:#5F6876;
   }
 
   *{margin:0;padding:0;box-sizing:border-box;}
@@ -34,7 +32,7 @@
   body{
     background:var(--base);
     color:var(--ink);
-    font-family:'Inter',system-ui,sans-serif;
+    font-family:'Inter',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
     line-height:1.5;
     -webkit-font-smoothing:antialiased;
   }
@@ -413,7 +411,7 @@
   .hero-chart-delta{
     font-size:0.78rem;
     font-weight:600;
-    color:var(--signal);
+    color:var(--accent);
   }
   .hero-chart-svg{
     width:100%;
@@ -532,7 +530,7 @@
     box-shadow:0 4px 10px rgba(18,22,28,0.08);
   }
   .stack-logo-name{
-    font-family:'IBM Plex Mono',monospace;
+    font-family:'IBM Plex Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace;
     font-size:0.68rem;
     font-weight:500;
     color:var(--ink);
@@ -650,7 +648,7 @@
     transition:opacity 220ms ease, transform 220ms ease;
   }
   .stat-value.is-pending{
-    opacity:0.7;
+    opacity:1;
     transform:translateY(4px);
   }
   .hero-chart-line,
@@ -743,13 +741,13 @@
     font-family:'Space Grotesk',sans-serif;
     font-size:1.1rem;
     font-weight:700;
-    color:var(--signal);
+    color:var(--accent);
     text-align:center;
     white-space:nowrap;
   }
   .proof-compare-arrow .mono{
     font-size:0.7rem;
-    color:var(--signal);
+    color:var(--accent);
     display:block;
     margin-top:0.2rem;
   }
@@ -1071,7 +1069,7 @@
     border:1px solid rgba(17,17,20,0.1);
     background:rgba(255,255,255,0.9);
     color:var(--slate);
-    font-family:'IBM Plex Mono',monospace;
+    font-family:'IBM Plex Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace;
     font-size:0.68rem;
     letter-spacing:0.08em;
     padding:0.38rem 0.55rem;
@@ -1796,7 +1794,7 @@
     display:inline-block;
     margin-bottom:10px;
   }
-  .ai-engine-branch-tag.confident{color:#16803C; background:#D7EFDF;}
+  .ai-engine-branch-tag.confident{color:#075B2B; background:#D7EFDF;}
   .ai-engine-branch-tag.ambiguous{color:var(--ai-amber); background:#F5E4C0;}
   .ai-engine-branch-tag.escalate{color:var(--ai-text); background:#E9E9EE;}
   .ai-engine-branch-title{
@@ -2083,7 +2081,7 @@
     line-height:1.3;
     margin-bottom:8px;
     min-height:42px;
-    font-family:'Space Grotesk',sans-serif;
+    font-family:'Space Grotesk',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
     letter-spacing:-0.01em;
   }
   .cap-system-desc{
@@ -2109,13 +2107,13 @@
   }
   .cap-system-metric-label{
     font-size:10.5px;
-    color:#9A9AA4;
+    color:var(--muted-strong);
     letter-spacing:0.01em;
   }
   .cap-system-stack{
     font-family:'IBM Plex Mono',monospace;
     font-size:10px;
-    color:#9A9AA4;
+    color:var(--muted-strong);
     letter-spacing:0.01em;
     line-height:1.6;
   }
@@ -2254,7 +2252,7 @@
     font-size:10px;
     letter-spacing:0.09em;
     text-transform:uppercase;
-    color:#9A9AA4;
+    color:var(--muted-strong);
     margin-bottom:18px;
   }
   .journey-chart-svg-wrap{
@@ -2337,7 +2335,7 @@
     overflow:hidden;
   }
   .contact-section .eyebrow{
-    color:var(--accent);
+    color:#4ADE80;
     margin-bottom:1.25rem;
   }
   .contact-section h2{
@@ -2496,11 +2494,11 @@
     font-family:var(--mono);
     font-size:0.94rem;
     font-weight:700;
-    color:var(--accent);
+    color:#4ADE80;
   }
   .contact-proof-label{
     font-size:0.69rem;
-    color:#6D7688;
+    color:#C8D0DE;
     letter-spacing:0.01em;
   }
   .contact-cta-row{
@@ -2618,7 +2616,7 @@
 
     <div class="sidebar-footer">
       <p>Based in the Philippines, working with businesses online.</p>
-      <p style="margin-top:0.6rem;"><a href="mailto:support@bmmdigital.ph">support@bmmdigital.ph</a></p>
+      <p style="margin-top:0.6rem;"><!--email_off--><a href="mailto:support@bmmdigital.ph">support@bmmdigital.ph</a><!--/email_off--></p>
     </div>
   </aside>
 
@@ -3138,7 +3136,7 @@
           <div class="contact-meta">
             <div>
               <span>Email</span>
-              <a href="mailto:support@bmmdigital.ph">support@bmmdigital.ph</a>
+              <!--email_off--><a href="mailto:support@bmmdigital.ph">support@bmmdigital.ph</a><!--/email_off-->
             </div>
             <div>
               <span>Based in</span>
@@ -3437,13 +3435,12 @@
 
       var sections = navLinks.map(function (link) {
         var id = link.getAttribute('href').slice(1);
-        return { link: link, section: document.getElementById(id), top: 0 };
+        return { link: link, section: document.getElementById(id) };
       }).filter(function (item) {
         return !!item.section;
       });
 
       if (!sections.length) return;
-      var ticking = false;
 
       function setActive(link) {
         navLinks.forEach(function (item) {
@@ -3451,60 +3448,30 @@
         });
       }
 
-      function refreshSectionPositions() {
-        sections.forEach(function (item) {
-          item.top = item.section.getBoundingClientRect().top + window.scrollY;
-        });
-      }
-
-      function updateActive() {
-        var marker = window.scrollY + Math.min(window.innerHeight * 0.72, 720);
-        var current = sections[0];
-
-        sections.forEach(function (item) {
-          if (item.top <= marker) current = item;
-        });
-
-        setActive(current.link);
-      }
-
-      function requestUpdateActive() {
-        if (ticking) return;
-        ticking = true;
-        window.requestAnimationFrame(function () {
-          updateActive();
-          ticking = false;
-        });
-      }
-
-      function refreshAndUpdateActive() {
-        refreshSectionPositions();
-        requestUpdateActive();
-      }
-
       sections.forEach(function (item) {
-        item.link.addEventListener('click', function (event) {
-          event.preventDefault();
-          var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-          var top = item.top;
-
-          window.scrollTo({
-            top: Math.max(0, top),
-            behavior: prefersReducedMotion ? 'auto' : 'smooth'
-          });
-
-          if (history.pushState) {
-            history.pushState(null, '', item.link.getAttribute('href'));
-          }
-
+        item.link.addEventListener('click', function () {
           setActive(item.link);
         });
       });
 
-      refreshAndUpdateActive();
-      window.setTimeout(refreshAndUpdateActive, 120);
-      window.addEventListener('scroll', requestUpdateActive, { passive:true });
-      window.addEventListener('resize', refreshAndUpdateActive);
+      if (!('IntersectionObserver' in window)) return;
+
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          var match = sections.find(function (item) {
+            return item.section === entry.target;
+          });
+          if (match) setActive(match.link);
+        });
+      }, {
+        rootMargin:'-38% 0px -48% 0px',
+        threshold:0
+      });
+
+      sections.forEach(function (item) {
+        observer.observe(item.section);
+      });
     }
     function init() {
       initStats();
