@@ -18,7 +18,7 @@
     --ink:#12161C;
     --slate:#3D4454;
     --line:#D7DBE3;
-    --accent:#1FAA59;
+    --accent:#087A3A;
     --accent-dim:#E8F7EE;
     --signal:#4ADE80;
   }
@@ -254,11 +254,11 @@
   }
   nav.primary-nav a:hover{
     color:#4ADE80;
-    background:rgba(31,170,89,0.08);
+    background:rgba(8,122,58,0.08);
   }
   nav.primary-nav a.is-active{
     color:var(--accent);
-    background:rgba(31,170,89,0.14);
+    background:rgba(8,122,58,0.14);
   }
   nav.primary-nav a.is-active .mono{
     color:var(--accent);
@@ -492,7 +492,7 @@
   }
   .stack-logo-card:hover{
     transform:translateY(-2px);
-    border-color:rgba(31,170,89,0.28);
+    border-color:rgba(8,122,58,0.28);
     background:#fff;
     box-shadow:0 14px 28px rgba(18,22,28,0.07);
   }
@@ -624,13 +624,13 @@
     border:1px solid var(--accent);
     transition:transform 180ms ease, background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
     transform:translateZ(0);
-    box-shadow:0 12px 26px rgba(31,170,89,0.22);
+    box-shadow:0 12px 26px rgba(8,122,58,0.24);
   }
   .btn-primary:hover{
-    background:#18894A;
-    border-color:#18894A;
+    background:#066732;
+    border-color:#066732;
     transform:scale(1.02);
-    box-shadow:0 16px 30px rgba(31,170,89,0.18);
+    box-shadow:0 16px 30px rgba(8,122,58,0.2);
   }
   .btn-primary:active{
     transform:scale(0.995);
@@ -1003,7 +1003,7 @@
   }
   .site-proof-card:hover{
     transform:translateY(-2px);
-    border-color:rgba(31,170,89,0.28);
+    border-color:rgba(8,122,58,0.28);
     box-shadow:0 24px 48px rgba(18,22,28,0.08);
   }
   .site-proof-card:focus-visible{
@@ -1188,7 +1188,7 @@
     height:68%;
     right:9%;
     top:16%;
-    background:rgba(31,170,89,0.08);
+    background:rgba(8,122,58,0.08);
   }
   .flow-step{
     position:relative;
@@ -1378,10 +1378,10 @@
     position:relative;
     min-height:520px;
     padding:0;
-    border:1px solid rgba(31,170,89,0.18);
+    border:1px solid rgba(8,122,58,0.18);
     border-radius:10px;
     background-color:#DDEEFF;
-    background-image:radial-gradient(rgba(31,170,89,0.18) 1px, transparent 1px);
+    background-image:radial-gradient(rgba(8,122,58,0.18) 1px, transparent 1px);
     background-size:18px 18px;
     box-shadow:0 24px 60px rgba(18,22,28,0.08);
     overflow:hidden;
@@ -1653,7 +1653,7 @@
     --ai-panel:#FFFFFF;
     --ai-panel-2:#FAFAFC;
     --ai-border:#E4E4E9;
-    --ai-accent:#1FAA59;
+    --ai-accent:#087A3A;
     --ai-accent-dim:#E6F5EC;
     --ai-accent-line:#C7E9D4;
     --ai-amber:#8A5200;
@@ -1951,7 +1951,7 @@
     transition:background 0.15s ease;
     background:var(--panel);
   }
-  .spec-card:hover{background:rgba(31,170,89,0.025);}
+  .spec-card:hover{background:rgba(8,122,58,0.025);}
 
   .spec-intro .spec-index{
     font-size:0.7rem;
@@ -2357,12 +2357,12 @@
     background:var(--accent);
     border-color:var(--accent);
     color:#fff;
-    box-shadow:0 8px 24px -8px rgba(31,170,89,0.5);
+    box-shadow:0 8px 24px -8px rgba(8,122,58,0.5);
   }
   .contact-section .btn-primary:hover{
-    background:#18894A;
+    background:#066732;
     color:#fff;
-    border-color:#18894A;
+    border-color:#066732;
   }
   .contact-layout{
     position:relative;
@@ -2381,7 +2381,7 @@
     position:relative;
     border:1px solid rgba(255,255,255,0.12);
     background:
-      linear-gradient(135deg, rgba(31,170,89,0.16), rgba(31,170,89,0) 42%),
+      linear-gradient(135deg, rgba(8,122,58,0.16), rgba(8,122,58,0) 42%),
       rgba(255,255,255,0.035);
     padding:1.5rem;
     box-shadow:0 24px 60px rgba(0,0,0,0.22);
@@ -2429,7 +2429,7 @@
     width:2.25rem;
     height:2.25rem;
     border-radius:50%;
-    background:rgba(31,170,89,0.16);
+    background:rgba(8,122,58,0.16);
     color:#4ADE80;
     font-family:var(--mono);
     font-size:0.78rem;
@@ -3437,16 +3437,23 @@
 
       var sections = navLinks.map(function (link) {
         var id = link.getAttribute('href').slice(1);
-        return { link: link, section: document.getElementById(id) };
+        return { link: link, section: document.getElementById(id), top: 0 };
       }).filter(function (item) {
         return !!item.section;
       });
 
       if (!sections.length) return;
+      var ticking = false;
 
       function setActive(link) {
         navLinks.forEach(function (item) {
           item.classList.toggle('is-active', item === link);
+        });
+      }
+
+      function refreshSectionPositions() {
+        sections.forEach(function (item) {
+          item.top = item.section.getBoundingClientRect().top + window.scrollY;
         });
       }
 
@@ -3455,17 +3462,31 @@
         var current = sections[0];
 
         sections.forEach(function (item) {
-          if (item.section.offsetTop <= marker) current = item;
+          if (item.top <= marker) current = item;
         });
 
         setActive(current.link);
+      }
+
+      function requestUpdateActive() {
+        if (ticking) return;
+        ticking = true;
+        window.requestAnimationFrame(function () {
+          updateActive();
+          ticking = false;
+        });
+      }
+
+      function refreshAndUpdateActive() {
+        refreshSectionPositions();
+        requestUpdateActive();
       }
 
       sections.forEach(function (item) {
         item.link.addEventListener('click', function (event) {
           event.preventDefault();
           var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-          var top = item.section.getBoundingClientRect().top + window.scrollY;
+          var top = item.top;
 
           window.scrollTo({
             top: Math.max(0, top),
@@ -3480,10 +3501,10 @@
         });
       });
 
-      updateActive();
-      window.setTimeout(updateActive, 120);
-      window.addEventListener('scroll', updateActive, { passive:true });
-      window.addEventListener('resize', updateActive);
+      refreshAndUpdateActive();
+      window.setTimeout(refreshAndUpdateActive, 120);
+      window.addEventListener('scroll', requestUpdateActive, { passive:true });
+      window.addEventListener('resize', refreshAndUpdateActive);
     }
     function init() {
       initStats();
